@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name="robots" content="noindex">
+<title>3D世界网总部直播画面</title>
+  
+  <link href="video-js.css" rel="stylesheet">
+  <!-- <script src="video.js"></script> -->
+  <style>
+       .box{
+          width:100%;
+          height: 800px;
+          position: relative;
+       }
+       .box .play{
+            position: absolute;
+            left: 0;
+            top:0;
+            right: 0;
+            bottom: 0;
+            margin:auto;
+            height: 128px;
+            width:128px;
+            background: red;
+            background: url(images/pause1.png);
+       }
+  </style>
+</head>
+<body>
+  <div class="box">
+      <video id="my_video_1" class="video-js vjs-default-skin" preload="auto" width="100%" height="800" data-setup='{}' controls poster="images/images01.jpg">
+         <source src="http://v.smartcamera.163.com/qingguo-public/163291604331570/playlist.m3u8">
+      </video>
+      <span class="play"></span>
+  </div>
+  
+  
+  <script>
+      var oVid =document.getElementsByTagName('video')[0];
+      var oPlay = document.getElementsByTagName('span')[0];
+      var flag = false;
+      //alert(oVid.paused)
+      oPlay.onclick = function(){
+        if(oVid.paused){
+            oVid.play();
+            flag = true;
+            oPlay.style.display = "none"
+        }else{
+            oVid.pause();
+        }
+      }
+  </script>
+  
+
+<script src="edit.js?3.40.2"></script>
+<script>jsbinShowEdit && jsbinShowEdit({"static":"http://static.jsbin.com","root":"http://jsbin.com"});</script>
+<!-- <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1656750-34', 'auto');
+ga('require', 'linkid', 'linkid.js');
+ga('require', 'displayfeatures');
+ga('send', 'pageview');
+
+</script> -->
+
+</body>
+</html>

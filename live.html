@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=1150, initial-scale=0.2"/>
+<title>3D世界网总部直播画面</title>
+<link href="style/base.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!--头部菜单-->
+<div class="top" style="z-index: 999">
+    <div class="w t_cen">
+        <div class="t_c_logo"><a href="index.html"><img src="images/logo.png" width="130"/></a></div>
+        <div class="t_c_lr t_c_left"></div>
+        <div class="t_c_cen">
+            <div class="t_c_top">
+            </div>
+            <div class="t_c_bottom" style="z-index: 999">
+                <ul>
+                    <li class="thisli">
+                        <a href="http://ke.3dsjw.com/zb/index.html"><em>　　首页</em><i>Home</i></a>
+                    </li>
+                    <li>
+                        <a href="http://ke.3dsjw.com"><em>3D云课</em><i>3Dyunke</i></a>
+						<!--
+                        <div class="Nodes" style="z-index: 999">
+                            <img src="images/menu_top.png" />
+                            <ul>
+                                <li><a href="http://ke.3dsjw.com/course/explore/UG">UG NX课程</a></li>
+                                <li><a href="http://ke.3dsjw.com/course/explore/Creo">Creo课程</a></li>
+                                <li><a href="http://ke.3dsjw.com/course/explore/CATIA">Catia课程</a></li>
+                                <li><a href="http://ke.3dsjw.com/course/explore/SW">Solidworks课程</a></li>
+                            </ul>
+                            <img src="images/menu_bottom.png" />
+                        </div>
+						-->
+                    </li>
+                    <li>
+                        <a href="http://www.3dsjw.com" target="_blank"><em>3D世界网</em><i>3DSJW</i></a>
+						<!--
+                        <div class="Nodes">
+                            <img src="images/menu_top.png" />
+                            <ul>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                            <img src="images/menu_bottom.png" />
+                        </div>
+						-->
+                    </li>
+                    <li>
+                        <a href="http://bbs.creoug.com" target="_blank"><em>精诚网</em><i>Creoug</i></a>
+						<!--
+                        <div class="Nodes">
+                            <img src="images/menu_top.png" />
+                            <ul>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                            <img src="images/menu_bottom.png" />
+                        </div>
+						-->
+                    </li>
+                    <li>
+                        <a href="http://www.ugsnx.com" target="_blank"><em style="font-size:14px;">UG爱好者</em><i>Ugsnx</i></a>
+						<!--
+                        <div class="Nodes">
+                            <img src="images/menu_top.png" />
+                            <ul>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                            <img src="images/menu_bottom.png" />
+                        </div>
+						-->
+                    </li>
+                    <li>
+                        <a href="http://www.cmiw.cn" target="_blank"><em>机械社区</em><i>Cmiw</i></a>
+						<!--
+                        <div class="Nodes">
+                            <img src="images/menu_top.png" />
+                            <ul>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                            <img src="images/menu_bottom.png" />
+                        </div>
+						-->
+                    </li>
+                    <li>
+                        <a href="http://ke.3dsjw.com/page/aboutus"><em>加入我们</em><i>JoinUs</i></a>
+                    </li>
+                    <li>
+                        <a href="http://ke.3dsjw.com/register?goto=%2F"><em>注册会员</em><i>Reg</i></a>
+                    </li>
+                </ul>
+                <div class="thisMenu" id="thisMenu"></div>
+            </div>
+        </div>
+        <div class="t_c_lr t_c_right"></div>
+    </div>
+</div>
+<!--/头部菜单-->
+
+<!--引用JQuery-->
+<script type="text/javascript" src="script/jquery.js"></script>
+<!--其他样式-->
+<script type="text/javascript" src="script/Other.js"></script>
+<br><br><br>
+<div align="center" style="z-index: 11">
+<center>
+<script language="javascript">
+var _ua = navigator.userAgent.toLowerCase(),
+    _MOBILE = _ua.indexOf('mobile') > -1,
+    _IOS = /ipad|iphone|ipod/.test(_ua),
+    _ANDROID = _ua.indexOf('android') > -1;
+//if(!(_MOBILE || _IOS || _ANDROID)){
+if(!navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i)){
+	document.write('<object type="application/x-shockwave-flash" id="CCMediaPlayer" name="CCMediaPlayer" align="middle" data="https://qlive.163.com/live/pc/flashplayer/CCMediaPlayer.swf" width="1024" height="768"><param name="quality" value="high"><param name="wmode" value="opaque"><param name="allowscriptaccess" value="sameDomain"><param name="allowfullscreen" value="true"><param name="flashvars" value="autoplay=true&rtmpFile=rtmp%3A%2F%2Fx.smartcamera.163.com%2Fqingguo-public%2F163291604331570%3FwsHost%3Dx.smartcamera.163.com&onPlay=function (){window.getFlashStatus(1)}&onMetaData=function (e){this.isLoaded=1}&onStop=function (){window.getFlashStatus(0)}&onPause=function (){window.getFlashStatus(3)}&ondanMu=function (e){window.getFlashStatus(e)}&onscreenShot=function (e){window.getScreenShot(e)}"></object>');
+}else{
+	window.location.href='http://ke.3dsjw.com/zb/livem.html';
+}
+</script>
+</center>
+
+</div>
+<!--
+position: absolute;
+left: expression((body.clientWidth-50)/2);
+top: expression((body.clientHeight-50)/2);
+-->
+<div align='center' style="margin-top:110px;padding-left:20%;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div id="nativeShare" style="float:left;"></div>
+</div>
+<br>
+
+<div align='center' style="clear:both;">
+</div>
+<script type="text/javascript" src="nativeShare.js"></script>
+<link rel="stylesheet" href="nativeShare.css"/>
+<script>
+    var config = {
+        url:'http://ke.3dsjw.com/zb/index.html',// 分享的网页链接
+        title:'《我在这里等你》-3D世界网寻贤篇',// 标题
+        desc:'学UG、Creo(Pro/E)CATIA、SolidWorks等3D工业数字化软件就上3D云课！',// 描述
+        img:'http://ke.3dsjw.com/img/3dyunkelogo.jpg',// 图片
+        img_title:'3D世界网 - 3D云课 - 发展历程',// 图片标题
+        from:'3D世界网 - 3D云课 - 发展历程' // 来源
+    };
+    var share_obj = new nativeShare('nativeShare',config);
+</script>
+
+
+<div>
+<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style_32x32" style='padding-left:43%;'>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_cqq"></a>
+	<a class="jiathis_button_tqq"></a>
+	<a class="jiathis_button_tsina"></a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank">更多</a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+</div>
+
+<!--
+<div align="center" style="clear:both;">
+<a href="http://ke.3dsjw.com/register?goto=%2F"><img  border="0" src='images/btn-share.png'></a>
+</div>
+-->
+
+<div align="center" style="margin-top:60px;">
+<center><font face="楷体" color='red'><font size="5"> 您是第 <script src="http://count.knowsky.com/count1/count.asp?id=70885&sx=1&ys=9" language="JavaScript" charset="gb2312"></script> 位来访者</font></font></center>
+<br>
+<span style="font-size:16px;">版权归3D世界网所有   <a href="http://www.miibeian.gov.cn/" target="_blank">浙ICP备15013022号-2</a></span>
+</div>
+
+</body>
+</html>
